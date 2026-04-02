@@ -1,0 +1,64 @@
+kaldifst>1.7.0
+kaldilm
+kaldialign
+num2words
+kaldi-decoder
+sentencepiece>=0.1.96
+pypinyin==0.50.0
+tensorboard
+typeguard
+dill
+onnx>=1.15.0
+onnxruntime>=1.16.3
+onnxoptimizer
+onnxsim
+onnxconverter_common
+
+# style check session:
+black==22.3.0
+isort==5.10.1
+flake8==5.0.4
+
+# cantonese word segment support
+pycantonese==3.4.0
+packaging
+# for TTS recipes
+matplotlib==3.8.2
+cython==3.0.6
+numba==0.58.1
+g2p_en==2.1.0
+espnet_tts_frontend==0.0.3
+# piper_phonemize: refer to https://github.com/rhasspy/piper-phonemize, could install the pre-built wheels from https://github.com/csukuangfj/piper-phonemize/releases/tag/2023.12.5
+# Usage: grep -v '^#' requirements-ci.txt  | xargs -n 1 -L 1 pip install
+# dependencies for GitHub actions
+#
+# See https://github.com/actions/setup-python#caching-packages-dependencies
+
+# numpy 1.20.x does not support python 3.6
+numpy==1.19
+pytest==7.1.0
+graphviz==0.19.1
+
+# -f https://download.pytorch.org/whl/cpu/torch_stable.html torch==1.13.1+cpu
+# -f https://download.pytorch.org/whl/cpu/torch_stable.html torchaudio==0.13.1+cpu
+# six
+
+# -f https://k2-fsa.github.io/k2/cpu.html k2==1.24.4.dev20231022+cpu.torch1.13.1
+
+# git+https://github.com/lhotse-speech/lhotse
+kaldilm==1.11
+kaldialign==0.7.1
+num2words
+pypinyin==0.50.0
+sentencepiece==0.1.96
+tensorboard==2.8.0
+typeguard==2.13.3
+black==22.3.0
+multi_quantization
+
+onnx
+onnxmltools
+onnxruntime
+onnxconverter_common
+kaldifst
+kaldi-decoder
